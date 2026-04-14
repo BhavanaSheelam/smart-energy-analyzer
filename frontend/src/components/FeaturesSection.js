@@ -8,7 +8,7 @@ import {
   FaBell,
   FaLeaf,
   FaArrowRight
-} from "react-icons/fa6";
+} from "react-icons/fa";
 
 function FeaturesSection() {
   const features = [

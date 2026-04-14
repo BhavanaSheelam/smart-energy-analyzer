@@ -8,7 +8,7 @@ import {
   FaTriangleExclamation,
   FaCircleCheck,
   FaLightbulb
-} from "react-icons/fa6";
+} from "react-icons/fa";
 
 function SmartAlerts({ user, onLogin }) {
   const [showModal, setShowModal] = useState(false);

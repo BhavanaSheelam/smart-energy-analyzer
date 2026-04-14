@@ -8,7 +8,7 @@ import {
   FaBolt,
   FaArrowTrendDown,
   FaLightbulb
-} from "react-icons/fa6";
+} from "react-icons/fa";
 
 function AIInsights({ user, onLogin }) {
   const [showModal, setShowModal] = useState(false);

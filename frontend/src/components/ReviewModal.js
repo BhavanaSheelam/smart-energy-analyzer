@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaStar, FaXmark } from "react-icons/fa6";
+import { FaStar, FaXmark } from "react-icons/fa";
 import API from "../services/api";
 
 function ReviewModal({ user, onClose }) {

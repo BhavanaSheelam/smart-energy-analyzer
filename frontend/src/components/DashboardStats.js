@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBolt, FaDollarSign, FaArrowTrendDown, FaLeaf } from "react-icons/fa6";
+import { FaBolt, FaDollarSign, FaArrowTrendDown, FaLeaf } from "react-icons/fa";
 
 function DashboardStats({ totals }) {
   const cards = [

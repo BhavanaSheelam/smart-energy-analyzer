@@ -16,7 +16,7 @@ import {
   FaBullseye,
   FaPiggyBank,
   FaIndianRupeeSign
-} from "react-icons/fa6";
+} from "react-icons/fa";
 
 function CostReduction({ user, onLogin }) {
   const [showModal, setShowModal] = useState(false);
