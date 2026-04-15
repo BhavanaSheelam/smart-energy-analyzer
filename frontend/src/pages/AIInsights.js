@@ -3,11 +3,10 @@ import Navbar from "../components/Navbar";
 import AuthModal from "../components/AuthModal";
 import useAppliances from "../hooks/useAppliances";
 import {
-  FaBrain,
+  FaLightbulb,
   FaClock,
   FaBolt,
-  FaArrowTrendDown,
-  FaLightbulb
+  FaArrowDown
 } from "react-icons/fa";
 
 function AIInsights({ user, onLogin }) {
@@ -48,7 +47,7 @@ function AIInsights({ user, onLogin }) {
       } else if (power >= 500) {
         impact = "Medium Impact";
         impactType = "medium";
-        icon = <FaArrowTrendDown />;
+        icon = <FaArrowDown />;
         title = `Reduce ${item.name} Power Consumption`;
         description = `${item.name} has a high power rating. Using it more carefully or replacing it with an energy-efficient model may save money every month.`;
         savings = `$${Math.max(8, (monthlyCost * 0.2).toFixed(0))}/month`;
@@ -180,7 +179,7 @@ function AIInsights({ user, onLogin }) {
           <div className="container">
             <div className="ai-hero">
               <div className="ai-badge">
-                <FaBrain />
+                <FaLightbulb />
                 <span>AI-Powered Insights</span>
               </div>
 
@@ -212,7 +211,7 @@ function AIInsights({ user, onLogin }) {
         <div className="container">
           <div className="ai-hero">
             <div className="ai-badge">
-              <FaBrain />
+              <FaLightbulb />
               <span>AI-Powered Insights</span>
             </div>
 
@@ -227,7 +226,7 @@ function AIInsights({ user, onLogin }) {
           <div className="ai-summary-card">
             <div className="ai-summary-header">
               <div className="ai-summary-icon">
-                <FaBrain />
+                <FaLightbulb />
               </div>
 
               <div>
@@ -319,7 +318,7 @@ function AIInsights({ user, onLogin }) {
             {insights.map((item, index) => (
               <div className="ai-insight-card" key={index}>
                 <div className="ai-insight-icon">
-                  <FaBrain />
+                  <FaLightbulb />
                 </div>
 
                 <h3>{item.title}</h3>

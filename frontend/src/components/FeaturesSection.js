@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaChartLine,
-  FaBrain,
-  FaArrowTrendDown,
+  FaLightbulb,
+  FaArrowDown,
   FaChartBar,
   FaBell,
   FaLeaf,
@@ -19,13 +19,13 @@ function FeaturesSection() {
       text: "Track your energy consumption in real-time with live updates and instant notifications."
     },
     {
-      icon: <FaBrain />,
+      icon: <FaLightbulb />,
       bg: "#f2eaff",
       title: "AI-Powered Insights",
       text: "Get intelligent recommendations powered by machine learning to optimize your energy usage."
     },
     {
-      icon: <FaArrowTrendDown />,
+      icon: <FaArrowDown />,
       bg: "#e9f8ef",
       title: "Cost Reduction",
       text: "Identify energy waste and reduce your electricity bills by up to 35% on average."

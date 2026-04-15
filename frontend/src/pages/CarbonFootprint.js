@@ -19,7 +19,7 @@ import {
   FaLeaf,
   FaAward,
   FaTree,
-  FaArrowTrendDown
+  FaArrowDown
 } from "react-icons/fa";
 
 function CarbonFootprint({ user, onLogin }) {
@@ -71,7 +71,7 @@ function CarbonFootprint({ user, onLogin }) {
         className: "cf-info-card green"
       },
       {
-        icon: <FaArrowTrendDown />,
+        icon: <FaArrowDown />,
         title: "Reduction Goal",
         value: "25%",
         text: "by end of year (on track!)",

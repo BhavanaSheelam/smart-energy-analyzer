@@ -19,8 +19,8 @@ import {
 import {
   FaChartBar,
   FaBolt,
-  FaCalendarDays,
-  FaArrowTrendUp
+  FaCalendarAlt,
+  FaArrowUp
 } from "react-icons/fa";
 
 function AdvancedAnalytics({ user, onLogin }) {
@@ -228,7 +228,7 @@ function AdvancedAnalytics({ user, onLogin }) {
             <div className="aa-stat-card">
               <div className="aa-stat-top">
                 <p>This Week</p>
-                <span className="aa-stat-icon blue"><FaCalendarDays /></span>
+                <span className="aa-stat-icon blue"><FaCalendarAlt /></span>
               </div>
               <h3>{(totalDaily * 7).toFixed(1)} kWh</h3>
               <small className="green">estimated weekly usage</small>
@@ -237,7 +237,7 @@ function AdvancedAnalytics({ user, onLogin }) {
             <div className="aa-stat-card">
               <div className="aa-stat-top">
                 <p>This Month</p>
-                <span className="aa-stat-icon purple"><FaArrowTrendUp /></span>
+                <span className="aa-stat-icon purple"><FaArrowUp /></span>
               </div>
               <h3>{(totalDaily * 30).toFixed(0)} kWh</h3>
               <small className="red">estimated monthly trend</small>

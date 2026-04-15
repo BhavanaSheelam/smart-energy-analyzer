@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import {
   FaBolt,
-  FaArrowTrendDown,
-  FaBrain,
+  FaArrowDown,
+  FaLightbulb,
   FaChartBar,
   FaBell,
   FaLeaf,
@@ -32,12 +32,12 @@ function StartFreeTrial({ user }) {
       text: "Access all premium features including AI-powered insights, advanced analytics, and smart alerts"
     },
     {
-      icon: <FaArrowTrendDown />,
+      icon: <FaArrowDown />,
       title: "Unlimited Appliances",
       text: "Add as many appliances as you need to get a complete picture of your energy consumption"
     },
     {
-      icon: <FaBrain />,
+      icon: <FaLightbulb />,
       title: "AI Recommendations",
       text: "Get personalized energy-saving recommendations powered by machine learning algorithms"
     },
@@ -186,7 +186,7 @@ function StartFreeTrial({ user }) {
             <div className="trial-results-grid">
               <div className="trial-result-box green">
                 <div className="trial-result-icon">
-                  <FaArrowTrendDown />
+                  <FaArrowDown />
                 </div>
                 <h3>23%</h3>
                 <h4>Average Energy Reduction</h4>
@@ -204,7 +204,7 @@ function StartFreeTrial({ user }) {
 
               <div className="trial-result-box purple">
                 <div className="trial-result-icon">
-                  <FaBrain />
+                  <FaLightbulb />
                 </div>
                 <h3>$47</h3>
                 <h4>Projected Monthly Savings</h4>

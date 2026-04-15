@@ -4,9 +4,9 @@ import AuthModal from "../components/AuthModal";
 import useAppliances from "../hooks/useAppliances";
 import {
   FaBell,
-  FaCircleExclamation,
-  FaTriangleExclamation,
-  FaCircleCheck,
+  FaExclamationCircle,
+  FaExclamationTriangle,
+  FaCheckCircle,
   FaLightbulb
 } from "react-icons/fa";
 
@@ -276,7 +276,7 @@ function SmartAlerts({ user, onLogin }) {
           <div className="sal-summary-grid">
             <div className="sal-summary-card critical">
               <div className="sal-summary-top">
-                <FaCircleExclamation />
+                <FaExclamationCircle />
                 <span>Critical</span>
               </div>
               <h3>{summary.critical}</h3>
@@ -284,7 +284,7 @@ function SmartAlerts({ user, onLogin }) {
 
             <div className="sal-summary-card high">
               <div className="sal-summary-top">
-                <FaTriangleExclamation />
+                <FaExclamationTriangle />
                 <span>High</span>
               </div>
               <h3>{summary.high}</h3>
@@ -300,7 +300,7 @@ function SmartAlerts({ user, onLogin }) {
 
             <div className="sal-summary-card resolved">
               <div className="sal-summary-top">
-                <FaCircleCheck />
+                <FaCheckCircle />
                 <span>Resolved</span>
               </div>
               <h3>{summary.resolved}</h3>
@@ -315,10 +315,10 @@ function SmartAlerts({ user, onLogin }) {
                 <div className="sal-alert-header">
                   <div className="sal-alert-title-group">
                     <div className="sal-alert-title-row">
-                      {item.type === "critical" && <FaCircleExclamation className="sal-icon-critical" />}
-                      {item.type === "high" && <FaTriangleExclamation className="sal-icon-high" />}
+                      {item.type === "critical" && <FaExclamationCircle className="sal-icon-critical" />}
+                      {item.type === "high" && <FaExclamationTriangle className="sal-icon-high" />}
                       {item.type === "medium" && <FaBell className="sal-icon-medium" />}
-                      {item.type === "resolved" && <FaCircleCheck className="sal-icon-resolved" />}
+                      {item.type === "resolved" && <FaCheckCircle className="sal-icon-resolved" />}
                       <h3>{item.title}</h3>
                     </div>
 
@@ -327,7 +327,7 @@ function SmartAlerts({ user, onLogin }) {
 
                   {item.resolved ? (
                     <div className="sal-resolved-badge">
-                      <FaCircleCheck />
+                      <FaCheckCircle />
                       <span>Resolved</span>
                     </div>
                   ) : (

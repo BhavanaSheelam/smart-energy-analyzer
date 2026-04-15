@@ -12,10 +12,10 @@ import {
   ResponsiveContainer
 } from "recharts";
 import {
-  FaArrowTrendDown,
+  FaArrowDown,
   FaBullseye,
   FaPiggyBank,
-  FaIndianRupeeSign
+  FaRupeeSign
 } from "react-icons/fa";
 
 function CostReduction({ user, onLogin }) {
@@ -69,7 +69,7 @@ function CostReduction({ user, onLogin }) {
     if (!appliances.length) {
       return [
         {
-          icon: <FaArrowTrendDown />,
+          icon: <FaArrowDown />,
           title: "Time-of-Use Optimization",
           text: "Shift heavy appliance usage to off-peak hours when electricity rates are lower.",
           level: "Easy",
@@ -85,7 +85,7 @@ function CostReduction({ user, onLogin }) {
 
     return [
       {
-        icon: <FaArrowTrendDown />,
+        icon: <FaArrowDown />,
         title: `Optimize ${topAppliance?.name || "Peak Usage"}`,
         text: `Use ${topAppliance?.name || "your high-consumption appliance"} more efficiently and reduce operation during high-cost periods.`,
         level: "Easy",
@@ -176,7 +176,7 @@ function CostReduction({ user, onLogin }) {
           <div className="container">
             <div className="cr-hero">
               <div className="cr-badge">
-                <FaArrowTrendDown />
+                <FaArrowDown />
                 <span>Cost Reduction</span>
               </div>
 
@@ -208,7 +208,7 @@ function CostReduction({ user, onLogin }) {
         <div className="container">
           <div className="cr-hero">
             <div className="cr-badge">
-              <FaArrowTrendDown />
+              <FaArrowDown />
               <span>Cost Reduction</span>
             </div>
 
@@ -345,7 +345,7 @@ function CostReduction({ user, onLogin }) {
 
           <div className="cr-tips-card">
             <div className="cr-tips-header">
-              <FaIndianRupeeSign />
+              <FaRupeeSign />
               <h2>Quick Tips to Reduce Bills Immediately</h2>
             </div>
 

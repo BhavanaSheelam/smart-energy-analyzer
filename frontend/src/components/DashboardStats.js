@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBolt, FaDollarSign, FaArrowTrendDown, FaLeaf } from "react-icons/fa";
+import { FaBolt, FaDollarSign, FaArrowDown, FaLeaf } from "react-icons/fa";
 
 function DashboardStats({ totals }) {
   const cards = [
@@ -24,7 +24,7 @@ function DashboardStats({ totals }) {
       value: `$${totals.potentialSavings}`,
       sub: "Up to 35% reduction",
       change: "",
-      icon: <FaArrowTrendDown />,
+      icon: <FaArrowDown />,
       bg: "#fff1e7"
     },
     {

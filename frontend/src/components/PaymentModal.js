@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  FaXmark,
+  FaTimes,
   FaCreditCard,
   FaLock,
   FaPaypal,
@@ -37,7 +37,7 @@ function PaymentModal({ plan, onClose }) {
     <div className="payment-overlay">
       <div className="payment-modal">
         <button className="payment-close" onClick={onClose}>
-          <FaXmark />
+          <FaTimes />
         </button>
 
         <h2 className="payment-title">Complete Your Purchase</h2>

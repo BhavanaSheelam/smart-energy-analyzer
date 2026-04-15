@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaStar, FaXmark } from "react-icons/fa";
+import { FaStar, FaTimes } from "react-icons/fa";
 import API from "../services/api";
 
 function ReviewModal({ user, onClose }) {
@@ -46,7 +46,7 @@ function ReviewModal({ user, onClose }) {
     <div className="review-overlay">
       <div className="review-modal">
         <button className="review-close-btn" onClick={onClose}>
-          <FaXmark />
+          <FaTimes />
         </button>
 
         <h2>Do you like this website?</h2>
