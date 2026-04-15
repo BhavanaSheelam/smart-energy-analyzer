@@ -16,14 +16,14 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/appliances", require("./routes/applianceRoutes"));
 app.use("/api/reviews", require("./routes/reviewRoutes"));
 
-app.get("/", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.send("Smart Energy Analyzer API running");
 });
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
